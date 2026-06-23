@@ -1,0 +1,28 @@
+<!doctype html>
+    <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Мини-игра с проверкой кода</title>
+      <style>
+        body { font-family: Arial, sans-serif; padding: 40px; }
+        input, button { font-size: 18px; padding: 8px; }
+      </style>
+    </head>
+    <body>
+      <h1>Финальный уровень мини-игры</h1>
+      <p>NPC просит ввести секретную комбинацию. Где игра её проверяет?</p>
+      <input id="code" placeholder="секретный код">
+      <button onclick="checkCode()">Проверить</button>
+      <p id="result"></p>
+      <script>
+        function checkCode() {
+          const code = document.getElementById("code").value;
+          if (code === "upupdowndown") {
+            document.getElementById("result").textContent = "CTF{KONAMI_MINI}";
+          } else {
+            document.getElementById("result").textContent = "Пока нет. Посмотри код игры.";
+          }
+        }
+      </script>
+    </body>
+    </html>

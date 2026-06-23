@@ -1,0 +1,16 @@
+<!doctype html>
+    <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Печенье для охраны базы</title>
+    </head>
+    <body>
+      <h1>Охранник базы любит cookies</h1>
+      <p>Открой инструменты разработчика и посмотри, какое печенье выдал охранник.</p>
+      <p>Если браузер не показывает cookie для локального файла, посмотри JavaScript-код страницы.</p>
+      <script>
+        document.cookie = "flag=CTF{COOKIE_GUARD}; path=/";
+        console.log("cookie:", document.cookie);
+      </script>
+    </body>
+    </html>
